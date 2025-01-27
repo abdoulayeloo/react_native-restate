@@ -13,7 +13,6 @@ interface UseAppwriteReturn<T, P> {
   error: string | null;
   refetch: (newParams: P) => Promise<void>;
 }
-
 export const useAppwrite = <T, P extends Record<string, string | number>>({
   fn,
   params = {} as P,
